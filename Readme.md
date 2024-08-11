@@ -1,6 +1,6 @@
 # Common Libraries
 
-The libraries included in this repo are meant to be used by other projects.
+Function libraries and classes implementing common functionality
 
 ## Library Contents
 
