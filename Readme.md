@@ -4,5 +4,5 @@ Function libraries and classes implementing common functionality
 
 ## Library Contents
 
-* Normalizer
+* Rescaler
 * PIDController

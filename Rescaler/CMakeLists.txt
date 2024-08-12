@@ -3,13 +3,13 @@ cmake_minimum_required(VERSION 3.14)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_library(COMMON_LIB_INT_NORMALIZER ${CMAKE_CURRENT_SOURCE_DIR}/IntegerNormalizer.cpp)
+add_library(COMMON_LIB_INT_RESCALER ${CMAKE_CURRENT_SOURCE_DIR}/IntegerRescaler.cpp)
   
 list(APPEND INCLUDE_DIRS
   ${CMAKE_CURRENT_SOURCE_DIR}
 )
   
-target_include_directories(COMMON_LIB_INT_NORMALIZER PUBLIC
+target_include_directories(COMMON_LIB_INT_RESCALER PUBLIC
   ${INCLUDE_DIRS}
 )
   
