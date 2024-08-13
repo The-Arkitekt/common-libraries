@@ -4,7 +4,7 @@
 namespace COMMON_LIB
 {
 
-IntegerRescaler::IntegerRescaler(int inputMin, int inputMax, int outputMin, int outputMax, unsigned int precision):
+IntegerRescaler::IntegerRescaler(int inputMin, int inputMax, int outputMin, int outputMax):
   inputMax   (0),
   outputMax  (0),
   scaleFactor(0)
@@ -17,10 +17,11 @@ IntegerRescaler::IntegerRescaler(int inputMin, int inputMax, int outputMin, int 
     return;
   }
 
-  this->inputMax  = inputMax;
-  this->outputMax = outputMax;
+  this->inputMax = inputMax;
 
   scaleFactor = ((outputMax - outputMin) << PRECISION) / (inputMax - inputMin);
+
+  this->outputMax = outputMax << PRECISION;
     
 }
 
